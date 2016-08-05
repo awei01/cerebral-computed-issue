@@ -6,6 +6,6 @@ Computed works fine and updates automatically whenever state changes when its fi
 
 Computed does not update automatically when state changes when first argument is a function.
 
-# clone this repo
-# `npm install`
-# `npm start`
+* clone this repo
+* `npm install`
+* `npm start`
