@@ -20,7 +20,7 @@ const App = ({ items, itemByObj, itemByFn, addData, asyncAddData, clearData }) =
 				: <li>No items yet</li>
 			}
 			</ul>
-			<h2>specifically when key is "foo"</h2>
+			<h4>specifically when key is "foo"</h4>
 			<ul style={{ fontWeight: 'bold', backgroundColor: '#eee', padding: '1em' }}>
 				{ itemByObj
 					? (<li>key: {itemByObj.key} | value: [{itemByObj.value}]</li>)
@@ -66,8 +66,8 @@ const App = ({ items, itemByObj, itemByFn, addData, asyncAddData, clearData }) =
 			<ul>
 				<li>Add some keys and values</li>
 				<li>Add a key as "foo" and some value. Note the results</li>
-				<li>computeItems() correctly grabs all the items</li>
-				<li>computeItemByObj() correctly the item when the key is set to 'foo'</li>
+				<li>computeItems() correctly grabs all the items and refreshes when state changes</li>
+				<li>computeItemByObj() correctly updates the item when the key is set to 'foo'</li>
 				<li>computeItemByFn() does not ever get re-run after initial computation</li>
 			</ul>
 		</div>
